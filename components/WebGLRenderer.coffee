@@ -12,8 +12,8 @@ exports.getComponent = ->
     datatype: 'bang'
     process: (event, payload) ->
       return unless event is 'data'
-      c.obj.render(c.scene, c.camera)
       c.obj = new THREE.WebGLRenderer()
+      c.obj.render(c.scene, c.camera)
       c.obj.setSize(c.width, c.height)
       c.dom.appendChild(c.obj.domElement)
       console.log 'RENDER', c.obj, c.scene, c.camera
