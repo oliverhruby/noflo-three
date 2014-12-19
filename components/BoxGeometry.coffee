@@ -25,7 +25,7 @@ exports.getComponent = ->
     process: (event, payload) ->
       return unless event is 'data'
       c.depth = payload
-      c.compute()            
+      c.compute()
 
   c.outPorts.add 'out',
     datatype: 'object'

@@ -39,11 +39,17 @@
   "keywords": [],
   "noflo": {
     "components": {
+      "AmbientLight": "components/AmbientLight.coffee",
       "BoxGeometry": "components/BoxGeometry.coffee",
       "Camera": "components/Camera.coffee",
+      "DirectionalLight": "components/DirectionalLight.coffee",
+      "JSONLoader": "components/JSONLoader.coffee",
       "Mesh": "components/Mesh.coffee",
       "MeshBasicMaterial": "components/MeshBasicMaterial.coffee",
+      "PlaneGeometry": "components/PlaneGeometry.coffee",
       "Scene": "components/Scene.coffee",
+      "SphereGeometry": "components/SphereGeometry.coffee",
+      "TextGeometry": "components/TextGeometry.coffee",
       "Vector3": "components/Vector3.coffee",
       "WebGLRenderer": "components/WebGLRenderer.coffee"
     }

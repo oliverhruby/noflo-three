@@ -10,7 +10,7 @@ exports.getComponent = ->
     datatype: 'string'
     process: (event, payload) ->
       return unless event is 'data'
-      c.obj = new THREE.AmbientLight( payload );
+      c.obj = new THREE.AmbientLight(payload)
       return unless c.outPorts.out.isAttached()
       c.outPorts.out.send c.obj
 

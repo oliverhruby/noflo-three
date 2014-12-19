@@ -22,16 +22,18 @@
     "components/SphereGeometry.coffee",
     "components/TextGeometry.coffee",
     "components/Vector3.coffee",
-    "components/WebGLRenderer.coffee"
+    "components/WebGLRenderer.coffee",
+    "components/DirectionalLight.coffee"
   ],
   "json": [
     "component.json"
   ],
   "noflo": {
     "components": {
-      "AmbientLigt": "components/AmbientLight.coffee",
+      "AmbientLight": "components/AmbientLight.coffee",
       "BoxGeometry": "components/BoxGeometry.coffee",
       "Camera": "components/Camera.coffee",
+      "DirectionalLight": "components/DirectionalLight.coffee",
       "JSONLoader": "components/JSONLoader.coffee",
       "Mesh": "components/Mesh.coffee",
       "MeshBasicMaterial": "components/MeshBasicMaterial.coffee",

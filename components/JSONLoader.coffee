@@ -27,7 +27,7 @@ exports.getComponent = ->
   c.compute = ->
     return unless c.materials? and c.geometry?
     if c.outPorts.geometry.isAttached()
-      c.outPorts.geometry.send c.geometry 
+      c.outPorts.geometry.send c.geometry
     if c.outPorts.materials.isAttached()
       c.outPorts.materials.send c.materials
 

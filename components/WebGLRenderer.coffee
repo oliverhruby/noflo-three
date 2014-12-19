@@ -53,8 +53,8 @@ exports.getComponent = ->
       c.obj = new THREE.WebGLRenderer({
         alpha: false,
         antialias: true
-      });
-      c.obj.setClearColor(0x505050, 0);
+      })
+      c.obj.setClearColor(0x505050, 0)
       c.obj.setSize(c.width, c.height)
       c.dom.appendChild(c.obj.domElement)
 
