@@ -3,9 +3,7 @@ THREE = require '../vendor/three.min.js'
 
 exports.getComponent = ->
   c = new noflo.Component
-
-  c.icon = 'cog'
-
+  c.icon = 'cube'
   c.description = 'Create a box geometry'
 
   c.inPorts.add 'width',

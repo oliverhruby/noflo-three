@@ -3,20 +3,14 @@ THREE = require '../vendor/three.min.js'
 
 exports.getComponent = ->
   c = new noflo.Component
-
-  c.icon = 'cog'
-
+  c.icon = 'cube'
   c.description = 'WebGL Renderer'
 
   c.inPorts.add 'tick',
     datatype: 'bang'
     process: (event, payload) ->
       return unless event is 'data'
-      c.obj = new THREE.WebGLRenderer()
       c.obj.render(c.scene, c.camera)
-      c.obj.setSize(c.width, c.height)
-      c.dom.appendChild(c.obj.domElement)
-      console.log 'RENDER', c.obj, c.scene, c.camera
 
   c.inPorts.add 'element',
     datatype: 'object'
@@ -55,8 +49,13 @@ exports.getComponent = ->
 
   c.compute = ->
     return unless c.width? and c.height? and c.scene? and c.camera? and c.dom?
-    c.obj = new THREE.WebGLRenderer()
-    c.obj.setSize(c.width, c.height)
-    c.dom.appendChild(c.obj.domElement)
+    unless c.obj
+      c.obj = new THREE.WebGLRenderer({
+        alpha: false,
+        antialias: true
+      });
+      c.obj.setClearColor(0x505050, 0);
+      c.obj.setSize(c.width, c.height)
+      c.dom.appendChild(c.obj.domElement)
 
   c

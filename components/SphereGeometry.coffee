@@ -4,38 +4,35 @@ THREE = require '../vendor/three.min.js'
 exports.getComponent = ->
   c = new noflo.Component
   c.icon = 'cube'
-  c.description = 'Creates a 3D vector'
+  c.description = 'Create a sphere geometry'
 
-  c.inPorts.add 'x',
+  c.inPorts.add 'radius',
     datatype: 'number'
     process: (event, payload) ->
       return unless event is 'data'
-      c.x = payload
+      c.radius = payload
       c.compute()
 
-  c.inPorts.add 'y',
+  c.inPorts.add 'widthsegments',
     datatype: 'number'
     process: (event, payload) ->
       return unless event is 'data'
-      c.y = payload
+      c.widthsegments = payload
       c.compute()
 
-  c.inPorts.add 'z',
+  c.inPorts.add 'heightsegments',
     datatype: 'number'
     process: (event, payload) ->
       return unless event is 'data'
-      c.z = payload
+      c.heightsegments = payload
       c.compute()
 
   c.outPorts.add 'out',
     datatype: 'object'
 
   c.compute = ->
-    return unless c.x? and c.y? and c.z?
-    c.obj = new THREE.Vector3(c.x, c.y, c.z)
-    #c.obj.setX(c.x)
-    #c.obj.setY(c.y)
-    #c.obj.setZ(c.z)
+    return unless c.radius?
+    c.obj = new THREE.SphereGeometry(c.radius)
     return unless c.outPorts.out.isAttached()
     c.outPorts.out.send c.obj
 

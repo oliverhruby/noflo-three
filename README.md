@@ -1,3 +1,3 @@
-# noflo-three
+# noflo-three [![Build Status](https://api.travis-ci.org/oliverhruby/noflo-three.png?branch=master)](http://travis-ci.org/oliverhruby/noflo-three)
 
-Components for threejs.
+[Three.js](http://threejs.org) components for noflo.

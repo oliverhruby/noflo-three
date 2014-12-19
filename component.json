@@ -1,8 +1,8 @@
 {
   "name": "noflo-three",
-  "description": "Components for threejs.",
-  "author": "Vilson Vieira <vilson@void.cc>",
-  "repo": "vilson/noflo-three",
+  "description": "three.js components for noflo.",
+  "author": "Oliver Hruby <oliver.hruby@gmail.com>",
+  "repo": "oliverhruby/noflo-three",
   "version": "0.1.0",
   "keywords": [],
   "dependencies": {
@@ -11,24 +11,34 @@
   "scripts": [
     "index.js",
     "vendor/three.min.js",
-    "components/WebGLRenderer.coffee",
+    "components/AmbientLight.coffee",
     "components/BoxGeometry.coffee",
     "components/Camera.coffee",
+    "components/JSONLoader.coffee",
     "components/Mesh.coffee",
     "components/MeshBasicMaterial.coffee",
+    "components/PlaneGeometry.coffee",
     "components/Scene.coffee",
-    "components/Vector3.coffee"
+    "components/SphereGeometry.coffee",
+    "components/TextGeometry.coffee",
+    "components/Vector3.coffee",
+    "components/WebGLRenderer.coffee"
   ],
   "json": [
     "component.json"
   ],
   "noflo": {
     "components": {
+      "AmbientLigt": "components/AmbientLight.coffee",
       "BoxGeometry": "components/BoxGeometry.coffee",
       "Camera": "components/Camera.coffee",
+      "JSONLoader": "components/JSONLoader.coffee",
       "Mesh": "components/Mesh.coffee",
       "MeshBasicMaterial": "components/MeshBasicMaterial.coffee",
+      "PlaneGeometry": "components/PlaneGeometry.coffee",
       "Scene": "components/Scene.coffee",
+      "SphereGeometry": "components/SphereGeometry.coffee",
+      "TextGeometry": "components/TextGeometry.coffee",
       "Vector3": "components/Vector3.coffee",
       "WebGLRenderer": "components/WebGLRenderer.coffee"
     }
