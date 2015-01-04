@@ -17,13 +17,20 @@
     <script src="http://chaijs.com/chai.js"></script>
     <script src="../node_modules/mocha/mocha.js"></script>
     <script>mocha.setup('bdd');</script>
+    <script src="./AmbientLight.js"></script>
+    <script src="./BoxGeometry.js"></script>
+    <script src="./DirectionalLight.js"></script>
+    <script src="./PlaneGeometry.js"></script>
+    <script src="./SphereGeometry.js"></script>
     <script src="./WebGLRenderer.js"></script>
     <script>
       if (window.mochaPhantomJS) {
         mochaPhantomJS.run();
       } else {
-        mocha.checkLeaks();
-        mocha.run();
+        var runner = mocha.run();
+        runner.on('end', function(){
+          window.mochaResults = runner.stats;
+        });
       }
     </script>
   </body>

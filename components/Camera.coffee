@@ -11,7 +11,10 @@ exports.getComponent = ->
     process: (event, payload) ->
       return unless event is 'data'
       #c.obj.position = payload
-      c.obj = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000 )
+      c.obj = new THREE.PerspectiveCamera 75,
+        window.innerWidth/window.innerHeight,
+        0.1,
+        1000
       c.obj.position.z = 5
       
       return unless c.outPorts.out.isAttached()
