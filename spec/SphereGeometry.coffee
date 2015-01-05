@@ -21,3 +21,9 @@ describe 'SphereGeometry component', ->
       chai.expect(c.inPorts.radius).to.be.an 'object'
     it 'should have an output port', ->
       chai.expect(c.outPorts.out).to.be.an 'object'
+    it 'should output the three object', (done) ->
+      out.once 'data', (res) ->
+        chai.expect(res.parameters.radius).to.equal 1
+        #chai.expect(res.type).to.equal "SphereGeometry"
+        done()
+      radius.send 1
