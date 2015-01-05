@@ -18,7 +18,7 @@ exports.getComponent = ->
 
   c.compute = ->
     return unless c.text?
-    c.obj = new THREE.TextGeometry(c.text)
+    c.obj = new THREE.TextGeometry c.text
     return unless c.outPorts.out.isAttached()
     c.outPorts.out.send c.obj
 

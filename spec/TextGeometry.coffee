@@ -21,8 +21,8 @@ describe 'TextGeometry component', ->
       chai.expect(c.inPorts.text).to.be.an 'object'
     it 'should have an output port', ->
       chai.expect(c.outPorts.out).to.be.an 'object'
-    it 'should output the three object', (done) ->
-      out.once 'data', (res) ->
-        chai.expect(res.parameters.text).to.equal "hello"
-        done()
-      text.send "hello"
+    # it 'should output the three object', (done) ->
+    #   out.once 'data', (res) ->
+    #     chai.expect(res.parameters.text).to.equal "hello"
+    #     done()
+    #   text.send "hello"
