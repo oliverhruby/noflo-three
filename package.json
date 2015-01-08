@@ -41,6 +41,7 @@
     "components": {
       "AmbientLight": "components/AmbientLight.coffee",
       "BoxGeometry": "components/BoxGeometry.coffee",
+      "CircleGeometry": "components/CircleGeometry.coffee",
       "CylinderGeometry": "components/CylinderGeometry.coffee",
       "DirectionalLight": "components/DirectionalLight.coffee",
       "JSONLoader": "components/JSONLoader.coffee",

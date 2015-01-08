@@ -27,6 +27,6 @@ describe 'JSONLoader component', ->
       chai.expect(c.outPorts.materials).to.be.an 'object'
     it 'should output the geometry', (done) ->
       geometry.once 'data', (res) ->
-        chai.expect(res.id).to.equal 5
+        chai.expect(res.vertices).to.be.an 'Array'
         done()
       url.send 'Model.json'

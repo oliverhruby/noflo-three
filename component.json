@@ -13,6 +13,7 @@
     "vendor/three.min.js",
     "components/AmbientLight.coffee",
     "components/BoxGeometry.coffee",
+    "components/CircleGeometry.coffee",
     "components/CylinderGeometry.coffee",
     "components/DirectionalLight.coffee",
     "components/JSONLoader.coffee",
@@ -34,6 +35,7 @@
     "components": {
       "AmbientLight": "components/AmbientLight.coffee",
       "BoxGeometry": "components/BoxGeometry.coffee",
+      "CircleGeometry": "components/CircleGeometry.coffee",
       "CylinderGeometry": "components/CylinderGeometry.coffee",
       "DirectionalLight": "components/DirectionalLight.coffee",
       "JSONLoader": "components/JSONLoader.coffee",
