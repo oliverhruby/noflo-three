@@ -45,6 +45,7 @@
       "CylinderGeometry": "components/CylinderGeometry.coffee",
       "DirectionalLight": "components/DirectionalLight.coffee",
       "JSONLoader": "components/JSONLoader.coffee",
+      "LineBasicMaterial": "components/LineBasicMaterial.coffee",
       "Mesh": "components/Mesh.coffee",
       "MeshBasicMaterial": "components/MeshBasicMaterial.coffee",
       "OrthographicCamera": "components/OrthographicCamera.coffee",
