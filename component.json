@@ -28,7 +28,8 @@
     "components/SphereGeometry.coffee",
     "components/TextGeometry.coffee",
     "components/Vector3.coffee",
-    "components/WebGLRenderer.coffee"
+    "components/WebGLRenderer.coffee",
+    "components/SpotLight.coffee"
   ],
   "json": [
     "component.json"
@@ -50,6 +51,7 @@
       "PointLight": "components/PointLight.coffee",
       "Scene": "components/Scene.coffee",
       "SphereGeometry": "components/SphereGeometry.coffee",
+      "SpotLight": "components/SpotLight.coffee",
       "TextGeometry": "components/TextGeometry.coffee",
       "Vector3": "components/Vector3.coffee",
       "WebGLRenderer": "components/WebGLRenderer.coffee"

@@ -54,6 +54,7 @@
       "PointLight": "components/PointLight.coffee",
       "Scene": "components/Scene.coffee",
       "SphereGeometry": "components/SphereGeometry.coffee",
+      "SpotLight": "components/SpotLight.coffee",
       "TextGeometry": "components/TextGeometry.coffee",
       "Vector3": "components/Vector3.coffee",
       "WebGLRenderer": "components/WebGLRenderer.coffee"

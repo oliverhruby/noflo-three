@@ -3,7 +3,7 @@ THREE = require '../vendor/three.min.js'
 
 exports.getComponent = ->
   c = new noflo.Component
-  c.icon = 'cube'
+  c.icon = 'cubes'
   c.description = 'WebGL Renderer'
 
   c.inPorts.add 'tick',

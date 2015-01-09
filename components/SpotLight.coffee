@@ -3,16 +3,14 @@ THREE = require '../vendor/three.min.js'
 
 exports.getComponent = ->
   c = new noflo.Component
-  c.icon = 'video-camera'
-  c.description = 'Orthographic camera'
+  c.icon = 'lightbulb-o'
+  c.description = 'Spot light'
 
-  c.inPorts.add 'position',
-    datatype: 'object'
+  c.inPorts.add 'color',
+    datatype: 'string'
     process: (event, payload) ->
       return unless event is 'data'
-      #c.obj.position = payload
-      c.obj = new THREE.OrthographicCamera window.innerWidth/ - 2, window.innerWidth / 2, window.innerHeight / 2, window.innerHeight / - 2, 1, 1000
-      
+      c.obj = new THREE.SpotLight(payload)
       return unless c.outPorts.out.isAttached()
       c.outPorts.out.send c.obj
 
