@@ -3,7 +3,7 @@ THREE = require '../vendor/three.min.js'
 
 exports.getComponent = ->
   c = new noflo.Component
-  c.icon = 'cube'
+  c.icon = 'lightbulb-o'
   c.description = 'Ambient light'
 
   c.inPorts.add 'color',

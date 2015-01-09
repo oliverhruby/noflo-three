@@ -51,6 +51,7 @@
       "OrthographicCamera": "components/OrthographicCamera.coffee",
       "PerspectiveCamera": "components/PerspectiveCamera.coffee",
       "PlaneGeometry": "components/PlaneGeometry.coffee",
+      "PointLight": "components/PointLight.coffee",
       "Scene": "components/Scene.coffee",
       "SphereGeometry": "components/SphereGeometry.coffee",
       "TextGeometry": "components/TextGeometry.coffee",
